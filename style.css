@@ -1,0 +1,221 @@
+body {
+    color: #fff;
+}
+.intro {
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(1,1,8,1) 35%, rgba(168,170,171,1) 100%);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: larger;
+    width: 100%;
+    height: 100px;
+}
+
+.page {
+    background: url(https://cdna.artstation.com/p/assets/images/images/004/628/352/large/derek-knierim-deadpool-cover-web-content.jpg?1485122947);
+    background-size: cover;
+}
+
+.header{
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 100px;
+}
+
+.row-content {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.profile_photo {
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRnOrcpOjyJQ76oBE_KtRTontmbHi_70jLjMDp-iz2CQkUHmYRb&usqp=CAU);
+    background-size: cover;
+    width: 100px;
+    min-height: 80px;
+    clip-path: polygon(21% 1%, 100% 0, 100% 79%, 79% 100%, 0 100%, 0 21%);
+    border: 2px solid black;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+
+.sidebar {
+    width: 30%;
+}
+
+.content {
+    width: 65%;
+}
+
+.contacts {
+    margin-bottom: 20px;
+}
+
+.contacts p {
+    width: 100%;
+}
+
+.row-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.skills {
+    width: 80%;
+    list-style: none;
+    margin: 5% auto;
+}
+
+.skill_bar {
+    background: rgb(189, 171, 171);    
+    display: block;
+    height: 4px;
+    border: 1px solid rgba(0,0,0,0.3);
+    border-radius: 3px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgb(114, 2, 2);
+}
+
+.skill_bar span {
+    height: 4px;
+    float: left;
+    background-color: rgb(138, 2, 2);
+}
+
+.humor {
+    width: 100%;
+    animation: humor 2s;
+}
+
+.healing {
+    width: 100%;
+    animation: healing 2s;
+}
+
+.swordsmanship {
+    width: 80%;
+    animation: swordsmanship 2s;
+}
+
+.martial {
+    width: 80%;
+    animation: martial 2s;
+}
+
+.tolertance {
+    width: 20%;
+    animation: tolerance 2s;
+}
+
+@keyframes humor {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 100%
+    }
+}
+
+@keyframes healing {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 100%
+    }
+}
+
+@keyframes swordsmanship {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 80%
+    }
+}
+
+@keyframes martial {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 80%
+    }
+}
+
+@keyframes tolertance {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 20%
+    }
+}
+
+.timeline {
+    overflow: visible;
+    padding: 30px 0 10px 0;
+    position: relative;
+  }
+  
+  .entry {
+    display: inline-block;
+    vertical-align: top;
+    background: rgb(107, 41, 41);
+    color: #fff;
+    padding: 10px;
+    font-size: 12px;
+    text-align: center;
+    position: relative;
+    border-top: 4px solid #fff;
+    border-radius: 3px;
+    width: 130px;    
+  }
+  
+  .entry:after {
+    content: '';
+    display: block;
+    background: #eee;
+    width: 7px;
+    height: 7px;
+    border-radius: 6px;
+    border: 3px solid #fff;
+    position: absolute;
+    left: 52%;
+    top: -27px;
+    margin-left: -6px;
+  }
+  
+  .entry:before {
+    content: '';
+    display: block;
+    background: #fff;
+    width: 5px;
+    height: 20px;
+    position: absolute;
+    left: 50%;
+    top: -20px;
+    margin-left: -2px;
+  }
+  
+  .entry h1 {
+    color: #fff;
+    font-size: 18px;
+    font-family: Georgia, serif;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .bar {
+    height: 4px;
+    background: #fff;
+    width: 80%;
+    position: relative;
+    top: 13px;
+    left: 0;
+  }
